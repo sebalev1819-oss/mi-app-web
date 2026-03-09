@@ -8,6 +8,6 @@ app.get('/', (req, res) => {
   res.sendFile(__dirname + '/public/index.html');
 });
 
-app.listen(puerto, () => {
+app.listen(puerto, '0.0.0.0', () => {
   console.log('Servidor funcionando en puerto ' + puerto);
 });
